@@ -1,5 +1,5 @@
 
-var happyImage = ['http://emojipedia-us.s3.amazonaws.com/cache/28/6f/286fd687549dfff674edaa56ae76596d.png'];
+var happyEmoji = ':smile:';
 
 module.exports = function(bot) {
   bot.hear(/I am (.*)/, function(msg) {
@@ -8,7 +8,7 @@ module.exports = function(bot) {
     console.log(emotion);
     switch (emotion) {
       case "happy":
-        return msg.reply(happyImage);
+        return msg.send(happyEmoji);
         break;
       case "sad":
         return msg.reply("I am sad!");
