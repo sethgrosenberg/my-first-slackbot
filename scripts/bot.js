@@ -1,6 +1,6 @@
 
 var happyEmoji = ':smile:';
-var sadEmoji = ':slightly_sad:';
+var sadEmoji = ':dissapointed:';
 var embarrassedEmoji = ':blush:'
 var playfulEmoji = ':stuck_out_tongue:'
 var flirtaciousEmoji = ':wink:'
@@ -52,7 +52,7 @@ module.exports = function(bot) {
         return msg.send(laughingEmoji);
         break;              
       default:
-        return msg.reply("I am a robot and emotionally stunted. I can only understand simple emotions. Try again!");
+        return msg.send("I am a robot and emotionally stunted. I can only understand simple emotions. Try again!");
    }
  });
 }
